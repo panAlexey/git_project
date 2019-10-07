@@ -6,6 +6,7 @@ if __name__ == '__main__':
     print('fourth branch')
     print('hi boy')
     print("new branch, i see you")
+    print('еще что то сделали')
     #    app = QApplication(sys.argv)
     #    ex = Example()
     #    ex.show()
