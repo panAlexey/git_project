@@ -1,6 +1,32 @@
 
 
+import pygame
 
+pygame.init()
+# считываем размер окна
+size = width, height = 300, 300
+screen = pygame.display.set_mode(size)
+
+
+def draw():
+    # задаем параметры прямоугольника
+    rect_colors = pygame.Color('red')
+    rect_width = 0
+    rect_point = [(10, 10), (280, 280)]
+    # рисуем прямоугольник
+    pygame.draw.rect(screen, rect_colors, rect_point, rect_width)
+
+
+draw()
+
+
+while pygame.event.wait().type != pygame.QUIT:
+    pygame.display.flip()
+
+
+pygame.quit()
+
+'''
 if __name__ == '__main__':
     print("first git file")
     print('main branch')
