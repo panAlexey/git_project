@@ -16,13 +16,13 @@ def draw():
     # рисуем прямоугольник
     pygame.draw.rect(screen, rect_colors, rect_point, rect_width)
     rect_colors = pygame.Color('white')
-    rect_point = [(15, 10), (300, 100)]
+    rect_point = [(15, 10), (400, 100)]
     pygame.draw.rect(screen, rect_colors, rect_point, rect_width)
     rect_colors = pygame.Color('blue')
-    rect_point = [(15, 110), (300, 100)]
+    rect_point = [(15, 110), (400, 100)]
     pygame.draw.rect(screen, rect_colors, rect_point, rect_width)
     rect_colors = pygame.Color('red')
-    rect_point = [(15, 210), (300, 100)]
+    rect_point = [(15, 210), (400, 100)]
     pygame.draw.rect(screen, rect_colors, rect_point, rect_width)
 
 
