@@ -4,7 +4,7 @@ import pygame
 
 pygame.init()
 # считываем размер окна
-size = width, height = 300, 600
+size = width, height = 500, 600
 screen = pygame.display.set_mode(size)
 
 
@@ -14,6 +14,9 @@ def draw():
     rect_width = 0
     rect_point = [(10, 10), (5, 580)]
     # рисуем прямоугольник
+    pygame.draw.rect(screen, rect_colors, rect_point, rect_width)
+    rect_colors = pygame.Color('white')
+    rect_point = [(15, 10), (300, 100)]
     pygame.draw.rect(screen, rect_colors, rect_point, rect_width)
 
 
